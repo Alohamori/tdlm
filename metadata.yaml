@@ -1,0 +1,61 @@
+title: Trabajo de las Mesas
+home_text: TdlM
+
+databases:
+  taskmaster:
+    source: various
+    source_url: /tdlm/sources
+    tables:
+      attempts:
+        columns:
+          PO (presentation order): the order in which the contestant's prize, VT, work of art, or live attempt was presented; 0 for simultaneous (most live tasks)
+          ± (adjustment): any alteration (bonus or deduction) applied to the attempt's base score
+          episode: the contestant's cumulative episode score after this task
+          series: 〃
+      discrepancies:
+        columns:
+          ?: This table exists to account for the two whole points that have gone misplaced in the history of TMUK.
+      episodes:
+        columns:
+          tasks: the number of "standard" tasks (those having five judged attempts) in this episode
+      measurements:
+        columns:
+          measurement: A value of "?" indicates that no conclusive measurement was given, with null used to signify a DNF/DQ. Note that times are stored internally as seconds but presented in D:HH:MM:SS format.
+      normalized_scores:
+        columns:
+          rigid: 'the simplest possible normalization: 5 points for 1st (equal), 4 for 2nd (equal), etc.; null for team tasks (only two ranks)'
+          spread: Distribute points from a pool of {5, 4, 3, 2, 1}, with rank ties between N people sharing the next N available point values. (〃)
+          scale: Multiply every score by some common factor to achieve a sum of 15 for the task; where this causes any individual score to exceed 5, regrettably abandon the 15-point target and scale down to ensure a maximum of 5. Note that this value does exist for team tasks due to being point- rather than rank-based.
+          5+3, 3+2, 3½+2½: various ways to normalize team tasks based on rank
+      objectives:
+        label_column: label
+      series:
+        sort: air_start
+        columns:
+          tasks: the number of "standard" tasks (those having five judged attempts) in this series
+      tasks:
+        label_column: summary
+        columns:
+          location: Note that this is specifically the location of the task brief (except in cases of the Knappett being involved), which is generally but not always where the bulk of a task took place.
+          std: 1 for "standard" tasks (those having five judged attempts), 0 otherwise
+          YT: Click to open an in-page player seeked to the beginning of the task (including the transition for filmed tasks). Right-click/long-tap to skip the first ten seconds.
+      teams:
+        label_column: members
+    queries:
+      prize_task_performance:
+        sql: |-
+          select c.name, c.series, sum(a.points) points,
+            count() tasks, round(avg(a.points), 2) PPT
+          from attempts a
+            join people c on c.id = a.contestant
+            join tasks t on t.id = a.task
+          where t.tags like '%prize%'
+            and c.series > 0 /* ignore specials */
+          group by c.id
+          order by PPT desc
+
+extra_css_urls:
+  - /static/styles.css
+
+extra_js_urls:
+  - /static/misc.js

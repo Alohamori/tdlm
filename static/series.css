@@ -1,0 +1,29 @@
+/* series indicators */
+a[href*="/people/"]::before {
+  content: '';
+  display: inline-block;
+  width: 8px; height: 8px;
+  border: 1px solid #666;
+  vertical-align: middle;
+  margin-right: 0.33em;
+}
+
+a[href*="/people/"] { white-space: nowrap; }
+
+a[href$="/people/1"]::before, a[href$="/people/2"]::before { background: #000; }
+a[href$="/people/3"]::before, a[href$="/people/4"]::before, a[href$="/people/5"]::before, a[href$="/people/6"]::before, a[href$="/people/7"]::before { background: #393b79; }
+a[href$="/people/8"]::before, a[href$="/people/9"]::before, a[href$="/people/10"]::before, a[href$="/people/11"]::before, a[href$="/people/12"]::before { background: #5254a3; }
+a[href$="/people/13"]::before, a[href$="/people/14"]::before, a[href$="/people/15"]::before, a[href$="/people/16"]::before, a[href$="/people/17"]::before { background: #6b6ecf; }
+a[href$="/people/18"]::before, a[href$="/people/19"]::before, a[href$="/people/20"]::before, a[href$="/people/21"]::before, a[href$="/people/22"]::before { background: #9c9ede; }
+a[href$="/people/23"]::before, a[href$="/people/24"]::before, a[href$="/people/25"]::before, a[href$="/people/26"]::before, a[href$="/people/27"]::before { background: #637939; }
+a[href$="/people/33"]::before, a[href$="/people/34"]::before, a[href$="/people/35"]::before, a[href$="/people/36"]::before, a[href$="/people/37"]::before { background: #8ca252; }
+a[href$="/people/38"]::before, a[href$="/people/39"]::before, a[href$="/people/40"]::before, a[href$="/people/41"]::before, a[href$="/people/42"]::before { background: #b5cf6b; }
+a[href$="/people/43"]::before, a[href$="/people/44"]::before, a[href$="/people/45"]::before, a[href$="/people/46"]::before, a[href$="/people/47"]::before { background: #cedb9c; }
+a[href$="/people/48"]::before, a[href$="/people/49"]::before, a[href$="/people/50"]::before, a[href$="/people/51"]::before, a[href$="/people/52"]::before { background: #8c6d31; }
+a[href$="/people/53"]::before, a[href$="/people/54"]::before, a[href$="/people/55"]::before, a[href$="/people/56"]::before, a[href$="/people/57"]::before { background: #bd9e39; }
+a[href$="/people/63"]::before, a[href$="/people/64"]::before, a[href$="/people/65"]::before, a[href$="/people/66"]::before, a[href$="/people/67"]::before { background: #e7ba52; }
+a[href$="/people/68"]::before, a[href$="/people/69"]::before, a[href$="/people/70"]::before, a[href$="/people/71"]::before, a[href$="/people/72"]::before { background: #e7cb94; }
+a[href$="/people/78"]::before, a[href$="/people/79"]::before, a[href$="/people/80"]::before, a[href$="/people/81"]::before, a[href$="/people/82"]::before { background: #843c39; }
+a[href$="/people/88"]::before, a[href$="/people/89"]::before, a[href$="/people/90"]::before, a[href$="/people/91"]::before, a[href$="/people/92"]::before { background: #ad494a; }
+a[href$="/people/98"]::before, a[href$="/people/99"]::before, a[href$="/people/100"]::before, a[href$="/people/101"]::before, a[href$="/people/102"]::before { background: #d6616b; }
+a[href$="/people/103"]::before, a[href$="/people/104"]::before, a[href$="/people/105"]::before, a[href$="/people/106"]::before, a[href$="/people/107"]::before { background: #e7969c; }

@@ -1,0 +1,75 @@
+{
+  "taskmaster": {
+    "hash": "ca2fca576d7a62b756bc4db296ca519c9087cbe6c7352e9060f8855934d3ce2f",
+    "size": 864256,
+    "file": "taskmaster.db",
+    "tables": {
+      "series": {
+        "count": 22
+      },
+      "episodes": {
+        "count": 142
+      },
+      "title_coiners": {
+        "count": 142
+      },
+      "tasks": {
+        "count": 788
+      },
+      "task_winners": {
+        "count": 997
+      },
+      "team_tasks": {
+        "count": 180
+      },
+      "teams": {
+        "count": 36
+      },
+      "attempts": {
+        "count": 3823
+      },
+      "normalized_scores": {
+        "count": 3823
+      },
+      "objectives": {
+        "count": 173
+      },
+      "tasks_by_objective": {
+        "count": 407
+      },
+      "measurements": {
+        "count": 1950
+      },
+      "people": {
+        "count": 112
+      },
+      "episode_scores": {
+        "count": 710
+      },
+      "series_scores": {
+        "count": 105
+      },
+      "special_locations": {
+        "count": 28
+      },
+      "discrepancies": {
+        "count": 10
+      },
+      "task_briefs": {
+        "count": 788
+      },
+      "task_readers": {
+        "count": 283
+      },
+      "podcast": {
+        "count": 144
+      },
+      "intros": {
+        "count": 616
+      },
+      "profanity": {
+        "count": 1957
+      }
+    }
+  }
+}
