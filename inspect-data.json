@@ -1,23 +1,23 @@
 {
   "taskmaster": {
-    "hash": "ca2fca576d7a62b756bc4db296ca519c9087cbe6c7352e9060f8855934d3ce2f",
-    "size": 864256,
+    "hash": "ffacb418b37c468ae5219802bee6bae10c891916e64570ce396b03fb5033f21e",
+    "size": 880640,
     "file": "taskmaster.db",
     "tables": {
       "series": {
         "count": 22
       },
       "episodes": {
-        "count": 142
+        "count": 143
       },
       "title_coiners": {
-        "count": 142
+        "count": 143
       },
       "tasks": {
-        "count": 788
+        "count": 793
       },
       "task_winners": {
-        "count": 997
+        "count": 1001
       },
       "team_tasks": {
         "count": 180
@@ -26,25 +26,25 @@
         "count": 36
       },
       "attempts": {
-        "count": 3823
+        "count": 3848
       },
       "normalized_scores": {
-        "count": 3823
+        "count": 3848
       },
       "objectives": {
-        "count": 173
+        "count": 174
       },
       "tasks_by_objective": {
-        "count": 407
+        "count": 410
       },
       "measurements": {
-        "count": 1950
+        "count": 1965
       },
       "people": {
         "count": 112
       },
       "episode_scores": {
-        "count": 710
+        "count": 715
       },
       "series_scores": {
         "count": 105
@@ -56,19 +56,19 @@
         "count": 10
       },
       "task_briefs": {
-        "count": 788
+        "count": 793
       },
       "task_readers": {
-        "count": 283
+        "count": 284
       },
       "podcast": {
-        "count": 144
+        "count": 145
       },
       "intros": {
         "count": 616
       },
       "profanity": {
-        "count": 1957
+        "count": 1973
       }
     }
   }
